@@ -33,7 +33,7 @@ This Kubeflow project contains 3 components
 
 1. Upload the component specification (`component.yaml`) for all components to a Bucket. Change the `image` path in the specification to your Docker repository. 
 
-1. Open the [NER-Pipeline.ipynb](NER-Pipeline.ibynp) in your Kubeflow environment, change the parameter according to your project and run it. 
+1. Open the [NER-Pipeline.ipynb](NER-Pipeline.ipynb) in your Kubeflow environment, change the parameter according to your project and run it. 
 
 1. Upload the dataset to a Bucket, the dataset can be downloaded [here](https://drive.google.com/file/d/136CqAq6z69ztIFCdswJl_CP7K3fddPn1/view?usp=sharing
 ) 
