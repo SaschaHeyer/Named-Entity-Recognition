@@ -57,7 +57,7 @@ Open permission:
 ![permission](https://github.com/SaschaHeyer/Named-Entity-Recognition/blob/master/documentation/files/permission.png?raw=true)
 
 And allUsers user:
-![all users](https://github.com/SaschaHeyer/Named-Entity-Recognition/blob/master/documentation/files/allusers.png?raw=true)
+![all users](https://github.com/SaschaHeyer/Named-Entity-Recognition/blob/master/documentation/files/allUsers.png?raw=true)
 
 
 ## Push Docker Container Error
