@@ -1,4 +1,4 @@
-# Run your pipeline
+# Run the pipeline
 
 ## Open the Kubeflow Notebook
 The pipeline can be created using our Jupyter notebook. First we have to create a Notebook in Kubeflow. 
@@ -13,7 +13,7 @@ Now you have all the code required to run the pipeline. Navigate to the `example
 
 ## Configure the pipeline
 
-The pipeline need several parameter in order to execute the components. 
+The pipeline need several parameter in order to execute the components. After you set up all the parameter, run the notebook and click on the `Open experiment` link.
 
 ### Configure preprocess component
 
@@ -41,3 +41,45 @@ The pipeline need several parameter in order to execute the components.
 * `model_prediction_class` - The prediction class of our custom prediction routine. 
 * `model_python_version` - The used python version
 * `model_package_uris` - The package which contains our custom prediction routine. 
+
+## Whats happening in the notebook?
+### Load the component
+Components can be used in Pipelines by loading them from an url. Everyone with access to the Docker repository can use this components.
+The component can be loaded via components.load_component_from_url()
+
+```python
+add code
+```
+
+### Create the pipeline
+The pipeline is created by defining an decorator.  The dsl decorator is provided via the pipeline SDK.
+
+`dsl.pipeline` defines a decorator for Python functions which returns a pipeline.
+
+```python
+add code
+```
+
+### Compile the pipeline
+To compile the pipeline we use the `compiler.Compile()` function which is part of the pipeline SDK. 
+The compiler generates a yaml definition which is used by Kubernetes to create the execution resources.
+
+```python
+add code
+```
+
+### Create an experiment
+Pipelines are always part of an experiment.
+They can be created with the Kubeflow pipeline client `kfp.client()`. 
+Experiments cannot be removed at the moment.
+
+```python
+add code
+```
+
+### Run the pipeline
+We use the experiment id and the compiled pipeline to run a pipeline. `client.run_pipeline()` runs the pipelines and provides a direct link to the Kubeflow experiment.
+
+```python
+add code
+```
