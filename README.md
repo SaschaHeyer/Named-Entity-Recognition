@@ -4,12 +4,6 @@ This example demonstrates how you can use Kubeflow to train and deploy a Keras m
 Custom prediction routines allow you to determine what code runs when you send an online prediction request to AI Platform.
 https://cloud.google.com/ml-engine/docs/tensorflow/custom-prediction-routines
 
-## What is Named Entity Recognition
-Named Entity Recognition is a word classification problem, which extract data called entities from text.
-
-TODO adapt sample image path
-![ner sample](https://github.com/SaschaHeyer/Machine-Learning-Training/blob/master/documentation-files/ner.png?raw=true)
-
 ## Goals
 
 * Demonstrate how to use Keras only models
@@ -19,13 +13,11 @@ TODO adapt sample image path
 * Demonstrate how to use Kubeflow metrics
 * Demonstrate how to use Kubeflow visualizations 
 
-## Components
+## What is Named Entity Recognition
+Named Entity Recognition is a word classification problem, which extract data called entities from text.
 
-This Kubeflow project contains 3 components
-
-* preprocess
-* train
-* deploy
+TODO adapt sample image path
+![ner sample](https://github.com/SaschaHeyer/Machine-Learning-Training/blob/master/documentation-files/ner.png?raw=true)
 
 ### Usage
 
