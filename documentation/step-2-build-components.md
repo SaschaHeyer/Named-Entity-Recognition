@@ -39,7 +39,12 @@ The build scripts are located in each component folder:
 To build and push the components please open a new Terminal and navigate to `/../` and run the following command:
 
 ```bash
-sh build_components.sh
+$ sh build_components.sh
 ```
 
 ## Check if the components are sucessfully pushed to the Google Cloud Repository
+
+Naviate to the Google Cloud Container Registry and validate if you see our three components. 
+
+[container registry](https://github.com/SaschaHeyer/Named-Entity-Recognition/blob/master/documentation/files/container.png?raw=true)
+
