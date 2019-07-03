@@ -53,11 +53,11 @@ The specification contains anything we need to use the component. Therefore we n
 
 Please upload all three component specifiations to your Google Cloud Storage and make it pubic accessable by setting the permission to `allUsers`.
 
-Open permission:
+Open permission by clicking on the three dots and select `Edit permissions`
 
 ![permission](https://github.com/SaschaHeyer/Named-Entity-Recognition/blob/master/documentation/files/permission.png?raw=true)
 
-And allUsers user:
+And add a new user `allUsers`, the file will be public accessible.
 
 ![all users](https://github.com/SaschaHeyer/Named-Entity-Recognition/blob/master/documentation/files/allUsers.png?raw=true)
 
