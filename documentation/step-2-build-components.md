@@ -46,5 +46,5 @@ $ sh build_components.sh
 
 Naviate to the Google Cloud Container Registry and validate if you see our three components. 
 
-[container registry](https://github.com/SaschaHeyer/Named-Entity-Recognition/blob/master/documentation/files/container.png?raw=true)
+![container registry](https://github.com/SaschaHeyer/Named-Entity-Recognition/blob/master/documentation/files/container.png?raw=true)
 
