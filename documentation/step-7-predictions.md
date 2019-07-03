@@ -6,7 +6,7 @@ It should look similar like this:
 
 ![ai platform models](https://github.com/SaschaHeyer/Named-Entity-Recognition/blob/master/documentation/files/models.png?raw=true)
 
-Open the model and choose your version. The version details should open. Please open the Tab `TEST & USE` and enter the following input data:
+Open the model and choose your version then click on the Tab `TEST & USE` and enter the following input data:
 
 ```
 {"instances":  ["London on Monday evening"]}
