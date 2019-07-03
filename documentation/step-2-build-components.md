@@ -5,11 +5,11 @@ A component is code that performs one step in the Kubeflow pipeline. It is a con
 ## Component structure
 A component follows a specific structure and contains:
  
-* Component logic. 
-* Component specification as yaml. 
-* Dockerfile to build the container. 
-* Readme to explain the component and its inputs and outputs. 
-* Scripts to build the component and push it to a Docker repository. 
+* `/src` - Component logic . 
+* `component.yaml` - Component specification. 
+* `Dockerfile` - Dockerfile to build the container. 
+* `readme.md` - Readme to explain the component and its inputs and outputs . 
+* `build_image.sh` - Scripts to build the component and push it to a Docker repository . 
 
 ## Components
 This Kubeflow project contains 3 components:
@@ -44,7 +44,13 @@ $ sh build_components.sh
 
 ## Check if the components are sucessfully pushed to the Google Cloud Repository
 
-Naviate to the Google Cloud Container Registry and validate if you see our three components. 
+Naviate to the Google Cloud Container Registry and validate if you see the components. 
 
 ![container registry](https://github.com/SaschaHeyer/Named-Entity-Recognition/blob/master/documentation/files/container.png?raw=true)
 
+## Push Docker Container Error
+Run `gcloud auth configure-docker` to configure docker, in case you get the following error message:
+
+```b
+You don't have the needed permissions to perform this operation, and you may have invalid credentials. To authenticate your request, follow the steps in: https://cloud.google.com/container-registry/docs/advanced-authentication
+```

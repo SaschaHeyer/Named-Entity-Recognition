@@ -1,15 +1,20 @@
 ## Run your pipeline
 
-The notebook [NER-Pipeline](../NER-Pipeline.ipynb) shows how to build and run a pipeline using our components.
-
-### Open or create a Kubeflow Notebook
+### Open the Kubeflow Notebook
 The pipeline can be created using our Jupyter notebook. First we have to create a Notebook in Kubeflow. 
 
-### Open a terminal 
+Open the Jupyter notebook interface and create a new Terminal by clicking on menu, New -> Terminal. In the Terminal, clone this git repo by executing:
 
-1. Open a Kubeflow Notebook
-1. Open a Terminal inside of the Notebook
-1. Enter git clone TODO add path
-1. Go back to your Notebook and navigate to TODO add path
-1. Open the notebook NER-Pipeline.ipynb
-1. Run the notebook
+```bash
+git clone https://github.com/kubeflow/examples.git
+```
+
+Now you have all the code required to run the pipeline. Navigate to the `examples/named-entity-recognition/notebooks` folder and open `Pipeline.ipynb`
+
+### Configure the pipeline
+
+The pipeline need several parameter in order to execute the components. 
+
+* `model_path` - 
+* `model_name` - 
+* `model_version` - 

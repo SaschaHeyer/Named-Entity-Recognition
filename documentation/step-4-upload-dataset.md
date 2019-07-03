@@ -1,4 +1,11 @@
-## Upload our dataset
+# Dataset
+
+## Upload dataset
+This repository contains the dataset which is used for this example. Our preprocess component needs access to this dataset. We archive this by uploading the dataset to a Google Cloud Storage. 
+
+Please create a bucket and upload `/named-entity-recognition/data/ner.csv`
+
+## Dataset description
 
 This example project is using the popular CoNLL 2002 dataset. The csv consists of multiple rows each containg a word with the corresponding tag. Multiple rows are building a single sentence. 
 
