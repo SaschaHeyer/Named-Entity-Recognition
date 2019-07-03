@@ -12,11 +12,7 @@ A component follows a specific structure and contains:
 * Scripts to build the component and push it to a Docker repository. 
 
 ## Components
-This Kubeflow project contains 3 components
-
-* preprocess
-* train
-* deploy
+This Kubeflow project contains 3 components:
 
 ### Preprocess component
 The preprocess component is downloading the training data and performs several preprocessing steps. This preprocessing step is required in order to have data which can be used by our model. 
@@ -30,9 +26,15 @@ The deploy component is using the model and starts a deployment to AI Platform.
 
 ## Build components
 In order to use the components later on in our pipelines we have to build and push those components to a docker registry. In this example we are using the 
-[Google Container Registry](https://cloud.google.com/container-registry/), if is possible to use any other docker registry. 
+[Google Container Registry](https://cloud.google.com/container-registry/), it is possible to use any other docker registry. 
 
 Each component has his dedicated build script `build_image.sh`, please open this file for each component and set **`<PROJECT-ID>`** to your Google Cloud Platform project id.
+
+The build scripts are located in each component folder:
+
+* `/components/preprocess/build_image.sh`
+* `/components/train/build_image.sh`
+* `/components/deploy/build_image.sh`
 
 To build and push the components please open a new Terminal and navigate to `/../` and run the following command:
 
