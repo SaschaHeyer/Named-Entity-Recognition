@@ -16,7 +16,7 @@ https://cloud.google.com/ml-engine/docs/tensorflow/custom-prediction-routines
 ## What is Named Entity Recognition
 Named Entity Recognition is a word classification problem, which extract data called entities from text.
 
-![ner sample](https://github.com/SaschaHeyer/Machine-Learning-Training/blob/master/documentation-files/ner.png?raw=true)
+![solution](https://github.com/SaschaHeyer/Named-Entity-Recognition/blob/master/documentation/files/solution.png?raw=true)
 
 ### Usage
 
@@ -26,6 +26,9 @@ Named Entity Recognition is a word classification problem, which extract data ca
 1. [Run the pipeline](documentation/step-4-run-pipeline.md)
 1. [Monitor the training](documentation/step-5-monitor-training.md)
 1. [Predict](documentation/step-6-predictions.md)
+
+### Model 
+The model is a Bi-LSTM
 
 ## TODO
 - [ ] Add the custom prediction routine implementation
