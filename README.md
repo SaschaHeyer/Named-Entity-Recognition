@@ -21,18 +21,12 @@ TODO adapt sample image path
 
 ### Usage
 
-1. [NER-Pipeline.ipynb](documenatation/step-1-build-components.md)
-
-1.  Build and push the Docker images for each component. Please change the `image_name` in the `build_image.sh` accordingly to your Google Container Registry. Do this step for all three components.
-
-1. Upload the component specification (`component.yaml`) for all components to a Bucket. Change the `image` path in the specification to your Docker repository. 
-
-1. Upload the dataset to a Bucket, the dataset can be downloaded [here](https://drive.google.com/file/d/136CqAq6z69ztIFCdswJl_CP7K3fddPn1/view?usp=sharing
-) 
-1. Open the [NER-Pipeline.ipynb](NER-Pipeline.ipynb) in your Kubeflow environment, change the parameter according to your project and run it. 
-
-
-1. Upload the custom prediction routine [WIP]
+1. [Setup Kubeflow and clone repository](documentation/step-1-setup.md)
+1. [Build the pipeline components](documentation/step-2-build-components.md)
+1. [Upload the dataset](documentation/step-3-upload-dataset.md)
+1. [Run the pipeline](documentation/step-4-run-pipeline.md)
+1. [Monitor the training](documentation/step-5-monitor-training.md)
+1. [Predict](documentation/step-6-predictions.md)
 
 ## TODO
 - [ ] Add the custom prediction routine implementation

@@ -52,9 +52,7 @@ add code
 ```
 
 ### Create the pipeline
-The pipeline is created by defining an decorator.  The dsl decorator is provided via the pipeline SDK.
-
-`dsl.pipeline` defines a decorator for Python functions which returns a pipeline.
+The pipeline is created by defining an decorator.  The dsl decorator is provided via the pipeline SDK. `dsl.pipeline` defines a decorator for Python functions which returns a pipeline.
 
 ```python
 add code
