@@ -62,6 +62,7 @@ $ sh copy_specification.sh
 ```
 
 Your bucket should look like this:
+
 ![container registry](https://github.com/SaschaHeyer/Named-Entity-Recognition/blob/master/documentation/files/bucket.png?raw=true)
 
 
