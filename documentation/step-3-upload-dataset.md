@@ -3,7 +3,11 @@
 ## Upload dataset
 This repository contains the dataset which is used for this example. Our preprocess component needs access to this dataset. We archive this by uploading the dataset to a Google Cloud Storage. 
 
-Please create a bucket and upload `/named-entity-recognition/data/ner.csv`
+Navigat to the folder `/data/` and run the following command:
+
+```bash
+gsutil cp ner.csv gs://${BUCKET}/data/ner.csv
+```
 
 ## Dataset description
 

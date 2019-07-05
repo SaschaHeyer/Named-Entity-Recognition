@@ -18,7 +18,7 @@ outputs:
     type: String
 implementation:
   container:
-    image: gcr.io/spielwiese-sascha-heyer/kubeflow/training/preprocess:latest
+    image: gcr.io/spielwiese-sascha-heyer/kubeflow/ner/preprocess:latest
     command: [
       python3, /pipelines/component/src/component.py,
       --input1-path,                        {inputValue: Input 1 URI},

@@ -28,7 +28,7 @@ inputs:
 outputs:
 implementation:
   container:
-    image: gcr.io/spielwiese-sascha-heyer/kubeflow/training/deploy-custom-prediction-routine:latest
+    image: gcr.io/spielwiese-sascha-heyer/kubeflow/ner/deploy:latest
     command: [
       sh, /pipelines/component/src/deploy.sh
     ]

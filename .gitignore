@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# custom
+custom_prediction_routine.egg-info
+custom_prediction_routine*

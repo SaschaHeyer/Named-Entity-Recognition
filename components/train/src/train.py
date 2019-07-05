@@ -31,7 +31,7 @@ parser.add_argument('--input-job-dir', type=str, help='')
 
 parser.add_argument('--input-tags', type=int, help='')
 parser.add_argument('--input-words', type=int, help='')
-parser.add_argument('--input-dropout', type=float, default=0.1 help='')
+parser.add_argument('--input-dropout', type=float, help='')
 
 parser.add_argument('--output-model-path', type=str, help='')
 parser.add_argument('--output-model-path-file', type=str, help='')

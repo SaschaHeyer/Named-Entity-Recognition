@@ -9,7 +9,7 @@ A component follows a specific structure and contains:
 * `component.yaml` - Component specification. 
 * `Dockerfile` - Dockerfile to build the container. 
 * `readme.md` - Readme to explain the component and its inputs and outputs . 
-* `build_image.sh` - Scripts to build the component and push it to a Docker repository . 
+* `build_image.sh` - Scripts to build the component and push it to a Docker repository. 
 
 ## Components
 This Kubeflow project contains 3 components:
@@ -51,15 +51,18 @@ Naviate to the Google Cloud Container Registry and validate if you see the compo
 ## Upload the component specification
 The specification contains anything we need to use the component. Therefore we need access to this files later on in our pipeline. 
 
-Please upload all three component specifiations to your Google Cloud Storage and make it pubic accessable by setting the permission to `allUsers`.
+We upload all three component specifiations to your Google Cloud Storage and make it pubic accessable by setting the permission to `allUsers`.
 
-Open permission by clicking on the three dots and select `Edit permissions`
+> It is also possible to upload those files to a storage solution of your chooice.
 
-![permission](https://github.com/SaschaHeyer/Named-Entity-Recognition/blob/master/documentation/files/permission.png?raw=true)
+Navigate to the components folder `/components/` open `copy_specification.sh` set your bucket name `BUCKET="your-bucket"` and run the following command:
 
-And add a new user `allUsers`, the file will be public accessible.
+```bash
+$ sh copy_specification.sh
+```
 
-![all users](https://github.com/SaschaHeyer/Named-Entity-Recognition/blob/master/documentation/files/allUsers.png?raw=true)
+Your bucket should look like this:
+![container registry](https://github.com/SaschaHeyer/Named-Entity-Recognition/blob/master/documentation/files/bucket.png?raw=true)
 
 
 ## Push Docker Container Error
