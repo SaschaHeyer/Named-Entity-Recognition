@@ -49,15 +49,15 @@ The component can be loaded via components.load_component_from_url()
 
 ```python
 preprocess_operation = kfp.components.load_component_from_url(
-    'https://storage.googleapis.com/.../preprocess/component.yaml')
+    'https://storage.googleapis.com/{}/components/preprocess/component.yaml'.format(BUCKET))
 help(preprocess_operation)
 
 train_operation = kfp.components.load_component_from_url(
-    'https://storage.googleapis.com/.../train/component.yaml')
+    'https://storage.googleapis.com/{}/components/train/component.yaml'.format(BUCKET))
 help(train_operation)
 
 ai_platform_deploy_operation = comp.load_component_from_url(
-    "https://storage.googleapis.com/.../deploy/component.yaml")
+    "https://storage.googleapis.com/{}/components/deploy/component.yaml".format(BUCKET))
 help(ai_platform_deploy_operation)
 ```
 
