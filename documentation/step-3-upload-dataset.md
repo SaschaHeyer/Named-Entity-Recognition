@@ -1,9 +1,7 @@
 # Dataset
 
 ## Upload dataset
-This repository contains the dataset which is used for this example. Our preprocess component needs access to this dataset. We archive this by uploading the dataset to a Google Cloud Storage. 
-
-Navigate to the folder `/data/` and run the following command:
+Please [download](https://drive.google.com/open?id=1qNNaYguyH_xLfbqnR5ABuYrjblkUEr_z) the dataset and upload it to a Google Cloud Storage location. 
 
 ```bash
 gsutil cp ner.csv gs://${BUCKET}/data/ner.csv
