@@ -1,4 +1,4 @@
-image_name=gcr.io/spielwiese-sascha-heyer/kubeflow/ner/preprocess
+image_name=gcr.io/<PROJECT-ID>/kubeflow/ner/preprocess
 image_tag=latest
 
 full_image_name=${image_name}:${image_tag}

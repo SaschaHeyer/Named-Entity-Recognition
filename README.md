@@ -1,8 +1,6 @@
-# [WIP] Named Entity Recognition with Kubeflow and Keras 
+# Named Entity Recognition with Kubeflow and Keras 
 
 This example demonstrates how you can use Kubeflow to train and deploy a Keras model with a custom prediction routine. 
-Custom prediction routines allow you to determine what code runs when you send an online prediction request to AI Platform.
-https://cloud.google.com/ml-engine/docs/tensorflow/custom-prediction-routines
 
 ## Goals
 

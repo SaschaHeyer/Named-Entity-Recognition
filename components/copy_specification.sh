@@ -1,4 +1,4 @@
-BUCKET="spielwiese-sascha-heyer"
+BUCKET="your-bucket"
 
 echo "\nCopy component specifications to Google Cloud Storage"
 gsutil cp preprocess/component.yaml gs://${BUCKET}/components/preprocess/component.yaml
