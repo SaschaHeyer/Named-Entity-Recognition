@@ -1,4 +1,7 @@
 # Run the pipeline
+If you are not familiar with pipelines have a look into the following article ["Kubeflow Components and Pipelines"](https://towardsdatascience.com/kubeflow-components-and-pipelines-33a1aa3cc338). 
+
+This tutorial is based upon @hamelsmu's article "How To Create Data Products That Are Magical Using Sequence-to-Sequence Models".
 
 ## Open the Kubeflow Notebook
 The pipeline can be created using our Jupyter notebook. For that, we have to create a Notebook in Kubeflow. 
@@ -17,7 +20,7 @@ The pipeline need several parameter in order to execute the components. After yo
 
 ### Configure preprocess component
 
-* `input_1_uri` -
+* `input_1_uri` - 
 * `output_y_uri_template` -
 * `output_x_uri_template` -
 * `output_preprocessing_state_uri_template` -
