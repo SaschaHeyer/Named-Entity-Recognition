@@ -18,19 +18,19 @@ The pipeline need several parameter in order to execute the components. After yo
 
 ### Configure preprocess component
 
-* `input_1_uri` - 
-* `output_y_uri_template` -
-* `output_x_uri_template` -
-* `output_preprocessing_state_uri_template` -
+* `input_1_uri` - The input data csv
+* `output_y_uri_template` - Output storage location for our preprocessed labels.
+* `output_x_uri_template` - Output storage location for our preprocessed features.
+* `output_preprocessing_state_uri_template` - Output storage location for our preprocessing state.
 
 ### Configure train component
 
-* `input_x_uri` -
-* `input_y_uri` -
-* `input_job_dir_uri` -
-* `input_tags` -
-* `input_words` -
-* `output_model_uri_template` -
+* `input_x_uri` - Output of the previous pipeline step, contains preprocessed features.  
+* `input_y_uri` - Output of the previous pipeline step, contains preprocessed labels.
+* `input_job_dir_uri` - Output storage location for the training job files.
+* `input_tags` - Output of the previous pipeline step, contains the number of tags.
+* `input_words` - Output of the previous pipeline step, contains the number of words. 
+* `output_model_uri_template` - Output storage location for our trained model. 
 
 
 ### Configure deploy component
