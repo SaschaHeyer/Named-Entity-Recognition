@@ -10,14 +10,14 @@ We have to create a bucket, this bucket will contain everything which is require
 gsutil mb -c regional -l us-east1 gs://your-bucket-name
 ```
 
-For easier access please set our bucket as enviornment variable.
+Make sure you create the following environment variable.
 
 ```bash
-BUCKET=your-bucket-name
+export BUCKET=your-bucket-name
 ```
 
 ## Clone this repository
-Everything you need is in this repository, please clone this repo:
+Please clone the following repository, it contains everything which is needed for this example.
 
 ```bash
 git clone https://github.com/kubeflow/examples.git

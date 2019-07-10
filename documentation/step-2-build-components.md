@@ -8,7 +8,7 @@ A component follows a specific structure and contains:
 * `/src` - Component logic . 
 * `component.yaml` - Component specification. 
 * `Dockerfile` - Dockerfile to build the container. 
-* `readme.md` - Readme to explain the component and its inputs and outputs . 
+* `readme.md` - Readme to explain the component and its inputs and outputs. 
 * `build_image.sh` - Scripts to build the component and push it to a Docker repository. 
 
 ## Components
@@ -25,7 +25,7 @@ The train component is using the preprocessed training data. Contains the model 
 The deploy component is using the model and starts a deployment to AI Platform. 
 
 ## Build components
-In order to use the components later on in our pipelines we have to build and push those components to a docker registry. In this example we are using the 
+In order to use the components later on in our pipelines, we have to build and push those components to a Docker registry. In this example, we are using the 
 [Google Container Registry](https://cloud.google.com/container-registry/), it is possible to use any other docker registry. 
 
 Each component has his dedicated build script `build_image.sh`, please open this file for each component and set **`<PROJECT-ID>`** to your Google Cloud Platform project id.
@@ -42,18 +42,18 @@ To build and push the components please open a new Terminal and navigate to `/..
 $ sh build_components.sh
 ```
 
-## Check if the components are sucessfully pushed to the Google Cloud Repository
+## Check if the components are successfully pushed to the Google Cloud Repository
 
-Naviate to the Google Cloud Container Registry and validate if you see the components. 
+Navigate to the Google Cloud Container Registry and validate if you see the components. 
 
 ![container registry](https://github.com/SaschaHeyer/Named-Entity-Recognition/blob/master/documentation/files/container.png?raw=true)
 
 ## Upload the component specification
-The specification contains anything we need to use the component. Therefore we need access to this files later on in our pipeline. 
+The specification contains anything we need to use the component. Therefore we need access to these files later on in our pipeline. 
 
-We upload all three component specifiations to your Google Cloud Storage and make it pubic accessable by setting the permission to `allUsers`.
+We upload all three component specifications to your Google Cloud Storage and make it public accessible by setting the permission to `allUsers`.
 
-> It is also possible to upload those files to a storage solution of your chooice.
+> It is also possible to upload those files to a storage solution of your choice.
 
 Navigate to the components folder `/components/` open `copy_specification.sh` set your bucket name `BUCKET="your-bucket"` and run the following command:
 

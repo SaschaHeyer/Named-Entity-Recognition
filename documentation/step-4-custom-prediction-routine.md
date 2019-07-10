@@ -9,7 +9,7 @@ Our model requires numeric inputs, remember the preprocessing steps.
 This is very unhandy if we want to use our model with raw text.
 To support preprocessing also on prediction time we have to define a custom prediction route.
 
-> Without custom prediction routine we would need to implement this preprocessing in a additional wrapper, for example App Engine or Cloud Function. Which adds complexity and latency.
+> Without custom prediction routine we would need to implement this preprocessing in an additional wrapper, for example, App Engine or Cloud Function. Which adds complexity and latency.
 
 ## How is it working?
 
@@ -24,7 +24,7 @@ Our custom prediction routine requires five parts
 
 To build our custom prediction routine run the build script located `/routine/build_routine.sh`. This will create a `tar.gz` which is required when we deploy our model. 
 
-Naviate to the routine folder `/routine/` and run the following build script:
+Navigate to the routine folder `/routine/` and run the following build script:
 
 ```bash
 $ sh build_routine.sh

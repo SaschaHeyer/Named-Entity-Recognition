@@ -1,7 +1,7 @@
 # Run the pipeline
 
 ## Open the Kubeflow Notebook
-The pipeline can be created using our Jupyter notebook. First we have to create a Notebook in Kubeflow. 
+The pipeline can be created using our Jupyter notebook. For that, we have to create a Notebook in Kubeflow. 
 
 Open the Jupyter notebook interface and create a new Terminal by clicking on menu, New -> Terminal. In the Terminal, clone this git repo by executing:
 
