@@ -50,6 +50,7 @@ Navigate to the Google Cloud Container Registry and validate if you see the comp
 
 ## Upload the component specification
 The specification contains anything we need to use the component. Therefore we need access to these files later on in our pipeline. 
+It also contains the path to our docker images, please open `component.yaml` for each component and set **`<PROJECT-ID>`** to your Google Cloud Platform project id.
 
 We upload all three component specifications to your Google Cloud Storage and make it public accessible by setting the permission to `allUsers`.
 
