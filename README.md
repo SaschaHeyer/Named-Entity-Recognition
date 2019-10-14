@@ -1,5 +1,7 @@
 # Named Entity Recognition with Kubeflow and Keras 
 
+> Now officially part of Kubeflow examples https://github.com/kubeflow/examples 🎉
+
 This example demonstrates how you can use Kubeflow to train and deploy a Keras model with a custom prediction routine. 
 
 ## Goals
